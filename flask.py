@@ -152,6 +152,15 @@ class LTI(object):
         :return: LTI lis_result_sourcedid
         """
         return session['lis_result_sourcedid']
+		
+	@property
+	def resource_link_title(self):
+		"""
+		LTI course
+		:return: course
+		"""
+		
+		return session['resource_link_title']
 
     @property
     def role(self):  # pylint: disable=no-self-use
