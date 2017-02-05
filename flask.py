@@ -160,7 +160,7 @@ class LTI(object):
 		:return: course
 		"""
 		
-		return session['resource_link_title']
+		return session.get('resource_link_title')
 
     @property
     def role(self):  # pylint: disable=no-self-use
